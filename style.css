@@ -1,0 +1,49 @@
+.container {
+    width: auto;
+    height: 770vh;
+    display: block;
+    background-color:gainsboro;
+}
+
+.title {
+    text-align: center;
+    padding: 150px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+}
+
+.search {
+    text-align: center;
+}
+
+input, button {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.card-body {
+    background-color: gainsboro;
+}
+
+.card {
+    background-color:gainsboro;
+    padding-top: 11px;
+}
+
+#tela {
+    padding-top: 50px;
+}
+
+/* input[type=text] {
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 95%;
+} */
+

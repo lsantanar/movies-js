@@ -3,7 +3,7 @@ const ENDPOINT = 'https://api.themoviedb.org/3';
 const IMGENDPOINT = 'https://image.tmdb.org/t/p/w500';
 const ABOUTENDPOINT = 'https://api.themoviedb.org/movie/';
 
-const elem = document.getElementById('btnHello')
+const elem = document.getElementById('btnHello');
 
 elem.addEventListener ('click',  () => {
     let query = document.getElementById('searchBox').value
@@ -14,7 +14,7 @@ elem.addEventListener ('click',  () => {
             for (x=0; x< data.results.length; x++) {
                 let filme = data.results[x];
                 str += `<div class="card col-md-4 col-sm-6" width="300px">
-                        <img src="${IMGENDPOINT}${filme.poster_path}" class="card-img-top" style="min-width: 300px" alt="...">
+                        <img src="${IMGENDPOINT}${filme.poster_path}" class="card-img-top" style="min-width: 200px" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">${filme.title}</h5>
                         <p class="card-text">${filme.overview}</p>
@@ -26,6 +26,3 @@ elem.addEventListener ('click',  () => {
        } )
        .catch (err => console.log (`Deu ruim: ${err.message}`))
 })
-
-
-
